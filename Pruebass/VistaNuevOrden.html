@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sidebar Responsiva</title>
+
+  <!-- Fuente de Material Symbols Rounded -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  
+  <!-- Estilo personalizado -->
+  <link rel="stylesheet" href="VistaNuevaOrden.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <!-- Sidebar Header -->
+    <header class="sidebar-header">
+      <a href="#" class="header-logo">
+        <img class="logotipo" id="miBoton" src="img/logo.png" alt="Logo">
+      </a>
+      <button class="toggler sidebar-toggler">
+        <span class="material-symbols-rounded">chevron_left</span>
+      </button>
+      <button class="toggler menu-toggler">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </header>
+
+    <!-- Navegación Sidebar -->
+    <nav class="sidebar-nav">
+      <!-- Navegación principal -->
+      <!-- Sidebar Navegación actualizada con <span> en lugar de <samp> -->
+    <ul class="nav-list primary-nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="imagenes_pt1"><img src="img/image 94.png" class="imagenes1" alt=""></span>
+          <span class="nav-label">Home</span>
+        </a>
+        <span class="nav-tooltip">Home</span>
+      </li>
+
+      <li class="nav-item">
+        <a href="ordenDeTrabajo.html" class="nav-link">
+          <span class="imagenes_pt1"><img src="img/image 100.png" class="imagenes1" alt=""></span>
+          <span class="nav-label">Orden de trabajo</span>
+        </a>
+        <span class="nav-tooltip">Orden de trabajo</span>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="imagenes_pt1"><img src="img/image 96.png" class="imagenes4" alt=""></span>
+          <span class="nav-label">Empleados</span>
+        </a>
+        <span class="nav-tooltip">Empleados</span>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="imagenes_pt1"><img src="img/image 97.png" class="imagenes1" alt=""></span>
+          <span class="nav-label">Citas</span>
+        </a>
+        <span class="nav-tooltip">Citas</span>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="imagenes_pt1"><img src="img/image 98.png" class="imagenes1" alt=""></span>
+          <span class="nav-label">Inventario</span>
+        </a>
+        <span class="nav-tooltip">Inventario</span>
+      </li>
+    </ul>
+
+    <ul class="nav-list secondary-nav">
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="imagenes_pt1"><img src="img/image 101.png" class="imagenes1" alt=""></span>
+          <span class="nav-label">Ajustes</span>
+        </a>
+        <span class="nav-tooltip">Ajustes</span>
+      </li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <span class="imagenes_pt1"><img src="img/image 102.png" class="imagenes3" alt=""></span>
+          <span class="nav-label">Cerrar sesión</span>
+        </a>
+        <span class="nav-tooltip">Cerrar sesión</span>
+      </li>
+    </ul>
+
+
+      <!-- Navegación secundaria -->
+      <ul class="nav-list secondary-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <samp class="imagenes_pt1"><img src="img/image 101.png" class="imagenes1" alt=""></samp>
+            <span class="nav-label">Ajustes</span>
+          </a>
+          <span class="nav-tooltip">Ajustes</span>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <samp class="imagenes_pt1"><img src="img/image 102.png" class="imagenes3" alt=""></samp>
+            <span class="nav-label">Cerrar sesión</span>
+          </a>
+          <span class="nav-tooltip">Cerrar sesión</span>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+<!-- Fin del codigo sidebar -->
+
+<!-- Comienzo Codigo Invemtario -->
+
+
+  <div class="main-content">
+    <div class="top-bar">
+      <div class="search-bar">
+        <input type="text" id="buscarRepuesto" placeholder="🔍 / Buscar repuestos...">
+        <input type="text" id="filtros" placeholder="⚙️ Filtros...">
+      </div>
+      <button class="btn-agregar" id="btnAgregar">Agregar Repuesto</button>
+    </div>
+
+    <div class="tabla-container">
+      <table id="tablaInventario">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Marca</th>
+            <th>Cantidad Disponible</th>
+            <th>Precio Unitario</th>
+          </tr>
+        </thead>
+          <tbody id="tablaRepuestos"></tbody>
+          <tr><td>Pastillas de frenos</td><td>Frenos</td><td>BMW</td><td>7</td><td>45.000</td></tr>
+          <tr><td>Filtro de Aceite</td><td>Filtros</td><td>HYUNDAI</td><td>6</td><td>25.000</td></tr>
+          <tr><td>Bujía</td><td>Encendido</td><td>TOYOTA</td><td>4</td><td>63.000</td></tr>
+          <tr><td>Amortiguador</td><td>Suspensión</td><td>LEXUS</td><td>2</td><td>15.000</td></tr>
+          <tr><td>Radiador</td><td>Refrigeración</td><td>HONDA</td><td>8</td><td>30.000</td></tr>
+          <tr><td>Batería</td><td>Eléctrico</td><td>MITSUBISHI</td><td>3</td><td>20.000</td></tr>
+          <tr><td>Disco de Freno</td><td>Frenos</td><td>SUSUKI</td><td>4</td><td>55.000</td></tr>
+          <tr><td>Alternador</td><td>Eléctrico</td><td>FORD</td><td>6</td><td>60.000</td></tr>
+        </tbody>
+      </table>
+      <div class="paginacion">← 1 - 10 →</div>
+    </div>
+  </div>
+
+  <!-- ↓ MODAL AGREGAR REPUESTO ↓ -->
+  <div id="modalRepuesto" class="modal-overlay">
+    <div class="modal">
+      <header class="modal-header">
+        <h2>Agregar Repuesto</h2>
+        <button class="modal-close">&times;</button>
+      </header>
+      <form id="formRepuesto" class="modal-body">
+        <div class="form-group">
+          <label for="inpNombre">Nombre:</label>
+          <input type="text" id="inpNombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="inpCategoria">Categoría:</label>
+          <input type="text" id="inpCategoria" name="categoria" required>
+        </div>
+        <div class="form-group">
+          <label for="inpMarca">Marca:</label>
+          <input type="text" id="inpMarca" name="marca" required>
+        </div>
+        <div class="form-group">
+          <label for="inpCantidad">Cantidad Disponible:</label>
+          <input type="number" id="inpCantidad" name="cantidad" min="0" required>
+        </div>
+        <div class="form-group">
+          <label for="inpPrecio">Precio Unitario:</label>
+          <input type="number" id="inpPrecio" name="precio" step="0.01" min="0" required>
+        </div>
+        <footer class="modal-footer">
+          <button type="submit" class="btn-submit">Enviar</button>
+        </footer>
+      </form>
+    </div>
+  </div>
+
+  
+
+  <!-- Script -->
+  <script src="validacion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./../verificarSesion.js"></script>
+    <script>
+
+  // Mostrar / ocultar modal
+    const btnAgregar = document.getElementById('btnAgregar');
+    const modal = document.getElementById('modalRepuesto');
+    const btnClose = modal.querySelector('.modal-close');
+
+    btnAgregar.addEventListener('click', () => {
+      modal.classList.add('open');
+    });
+    btnClose.addEventListener('click', () => {
+      modal.classList.remove('open');
+    });
+    // Cerrar al hacer clic fuera del modal
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.classList.remove('open');
+    });
+
+    document.getElementById('formRepuesto').addEventListener('submit', e => {
+  e.preventDefault();
+  const data = {
+    nombre: e.target.nombre.value,
+    categoria: e.target.categoria.value,
+    marca: e.target.marca.value,
+    cantidad: e.target.cantidad.value,
+    precio: e.target.precio.value
+  };
+
+  // Agregar fila a la tabla
+  const tbody = document.getElementById('tablaRepuestos');
+  const nuevaFila = document.createElement('tr');
+  nuevaFila.innerHTML = `
+    <td>${data.nombre}</td>
+    <td>${data.categoria}</td>
+    <td>${data.marca}</td>
+    <td>${data.cantidad}</td>
+    <td>${Number(data.precio).toLocaleString('es-CO')}</td>
+  `;
+  tbody.appendChild(nuevaFila);
+
+  // Cerrar modal y limpiar formulario
+  modal.classList.remove('open');
+  e.target.reset();
+  Swal.fire('¡Éxito!','Repuesto agregado correctamente.','success');
+});
+
+     </script>
+
+</body>
+
